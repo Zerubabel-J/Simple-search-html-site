@@ -1,24 +1,21 @@
-This project is designed to understand your ability to solve a simple fullstack challenge.
-It is not designed to trick you, its simply to understand your ability.
-Feel free to use google but be sure to understand what you are copy pasting.
+# Simple HTML SITE
 
-We are looking for HTML, CSS, TS, Clean code, and ability to understand project setup skills in this test.
-The aim is to build a simple search suggestion like google. I.E as user is typing to display a list of results from a hardcoded API endpoint using.
+This is a simple Express server that listens for GET requests on the root route (/), filters data based on a query parameter, and returns filtered results. It uses the node-fetch package to fetch data from an external API (https://jsonplaceholder.typicode.com/comments) and the cors package to enable cross-origin requests.
 
-The flow should look like this:
-User types into UI (on keystroke) -> Use JS to make an ajax request to Node API -> Node API makes request to the jsonplaceholder -> Node API filters data and sends response -> Use JS to show relevant results
+# Features
 
-Use node 22
+Handles GET requests with a query parameter. Fetches data from an external API (jsonplaceholder). Filters the results based on the query parameter. Enables CORS support for frontend applications.
 
-1. Figure out how to run the project
-2. In ./script.ts write your code to make your AJAX request to the Node endpoint
-3. In ./node/index.ts write your logic to make request to https://jsonplaceholder.typicode.com/comments?postId=3 and filter by the keywords the user has input (use the `name` property from the API response to compare)
-4. In ./script.ts take the response and display it
-5. In ./style.scss modify the css to give it some form of presentable UI. We need to see you can use semantics CSS & HTML to make things presentable
+1. Install Dependencies
+   Run the following command to install all required dependencies for both the front-end and back-end:
+   npm install
 
-Bonus: write some unit tests!
+2. Running the Front-End
+   To start the front-end with live reloading, run the following command:
+   npm run dev
+   This will start the front-end and serve the content, usually accessible at http://localhost:3000.
 
-
-Submit your code into Github or Gitlab for review. Please ensure the code is accessible publicly
-
-Good luck
+3. Running the API
+   To run the API (Node.js with Express), use the following command:
+   npx tsx node/index.ts
+   This will start the API server, usually accessible at http://localhost:3001.
