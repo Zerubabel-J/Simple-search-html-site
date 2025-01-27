@@ -16,17 +16,17 @@ npm install
 2. Running the Front-End
    To start the front-end with live reloading, run the following command:
 
+```bash
 npm run dev
+```
 
 This will start the front-end and serve the content, usually accessible at http://localhost:3000.
 
 3. Running the API
    To run the API (Node.js with Express), use the following command:
 
+```bash
 npx tsx node/index.ts
+```
 
 This will start the API server, usually accessible at http://localhost:3001.
-
-```
-
-```
